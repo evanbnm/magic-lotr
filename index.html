@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr"></html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <a href="">
+                <img src="images/logo.png" alt="">
+            </a>
+
+            <nav>
+                <a href="">
+                    Produits
+                </a>
+                <a href="">
+                    Regarder
+                </a>
+                <a href="">
+                    Jouer
+                </a>
+                <a href="">
+                    Histoire
+                </a>
+                <a href="">
+                    Article
+                </a>
+            </nav>
+        </header>
+
+        <main>
+            <img src="images/LTR.webp" alt="">
+            <div id="grid-container">
+
+                <template id="card-template">
+                    <div class="card">
+                        <img class="card-img"> 
+                        <p>{{texte}}</p>
+                        <div class="mana-img">
+                        </div>
+                    </div>
+                </template>
+
+            </div>
+        </main>
+    </body>
+</html>

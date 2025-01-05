@@ -1,0 +1,81 @@
+body {
+    background-image: linear-gradient(rgba(57, 13, 10, 0.6), rgba(57, 13, 10, 0.6)), url(https://images.ctfassets.net/s5n2t79q9icq/1RJfBURhOuSJba5feByRzk/f8352755ec2b3a015dd82568d74dba4c/Hsnfvfty23lnf0-1920x1040.jpg);
+    background-attachment: fixed; /* effet paralaxe mais je suis pas sûr */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+}
+
+header {
+    position: fixed; /* les trois premiers éléments permettent de laisser le header en haut */
+    width: 100%;
+    top: 0;
+    background-color: black;
+    height: 55px;
+    display: flex;
+    padding-left: 5%;
+}
+
+header img {
+    width: 130px;
+}
+
+nav a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 1em;
+    padding-right: 1em
+}
+
+nav a:hover {
+    color: #ea3601
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* comme ça c'est pas zoomé */
+    flex-direction: column;
+}
+
+/* il faut mieux mettre le #grid-container plutot que main div sinon le display grid n'est plus respecté lors de l'ajout de display flex pour .card */
+#grid-container {  
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-row-gap: 15px;
+}
+
+.card-img {
+    height: 320px;
+    border-radius: 10px;
+}
+
+.card p {
+    color: antiquewhite;
+    font-weight: 500;
+}
+
+.mana {
+    width: 15px;
+}
+
+/* j'ai fait ça pour bien afficher les éléments au centre sous la carte */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
