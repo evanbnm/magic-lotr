@@ -24,6 +24,10 @@ async function afficherToutesLesCartes() {
 
             mana = parseMana(card.mana_cost);
 
+            let div = document.createElement("div");
+            div.classList.add("mana-img");
+            clone.querySelector(".card").appendChild(div);
+
             for (symbol of mana) {
                 let img = document.createElement("img"); // let important ici
                 img.classList.add("mana");
